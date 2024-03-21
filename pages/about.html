@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/folded-booklet.png" />
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body class="is-preload">
+
+  <!-- Header -->
+  <header id="header">
+
+      <div class="mobile-menu ">
+          <i class="icon solid fa-bars"></i>
+      </div>
+
+      <div class="inner">
+          <div class="logo-group">
+              <a href="../index.html" class="image avatar"><img src="./images/annem.jpeg" alt="" />
+
+              </a>
+              <a href="../index.html">
+                  <h1><img src="../images/Cano-icon-edited.jpg" width="30">&nbsp;&nbsp; <strong>Figen Demirel</strong></h1>
+              </a>
+          </div>
+
+          <div class="menu-group">
+              <ul class="beta">
+                  <li>
+                      <a href="./about.html">
+                          <h1>
+                              <img src="../images/Cano-icon-edited.jpg" width="30">&nbsp;&nbsp; Biography
+                          </h1>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./watercolor.html">
+                          <h1><img src="../images/Cano-icon-edited.jpg" width="30">&nbsp;&nbsp; Works</h1>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./digital.html">
+                          <h1><img src="../images/Cano-icon-edited.jpg" width="30">&nbsp;&nbsp; Studio</h1>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+  </header>
+
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+
+        <!-- <header class="major">
+                <h2>Ipsum lorem dolor aliquam ante commodo<br /> magna sed accumsan arcu neque.</h2>
+            </header> -->
+
+
+            <section>
+                <header class="major">
+                    <h1></h1>
+                    <p><span class="image right" style="width: 25%;"><img src="../images/annem.jpeg" alt="me"></span>
+                      I graduated from Hacettepe University Faculty of Dentistry in 1986.
+                      I completed all my academic studies and academic promotions at the same university and became a professor in 2004.
+                      I started my painting works in 2012.
+                      I took drawing, oil painting and watercolor lessons for four years, and drawing and engraving lessons for the following two years.
+                      I held my first personal exhibition in 2016.
+                      Later, I participated in art fairs and group exhibitions.
+                      I illustrated some scientific books and magazines in the field of dentistry.
+                      I continue my work in my own workshop.
+
+                    <br /></p>
+                </header>
+            </section>
+            <section>
+                <h3>Exhibitions </h3>
+                <p>Solo exhibition / Still Life Art 2016</p>
+                <p>3. Contemporary Art Ankara 2017</p>
+                <p>4. Contemporary Art Ankara 2018</p>
+                <p>5. Contemporary Art Ankara 2019</p>
+                <p>"Sanat Şart" 4. Plastic Art Exhibition 2019</p>
+                <p>"İki Kere (-)" Art Exhibition 2019</p>
+                <p>6. Contemporary Art Ankara 2020</p>
+                <p>8. Contemporary Art Ankara 2022</p>
+                <p>International "Özgür Kuş" Group Painting Exhibition 2022</p>
+                <p>"Ekim Geçidi" 21. Annual Contemporary Art Exhibition 2022</p>
+                <p>9. Contemporary Art Ankara 2023 </p>
+            </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+      <div>
+        <a href="../index.html">English</a> &nbsp;&nbsp;
+        <a href="../index-Turkish.html">Türkçe</a>
+      </div>
+
+
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://twitter.com/fgndmrl" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/figenusludemirel/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <!-- <li><a href="https://www.youtube.com/channel/UCLjOWONOue3XwyLmyno3f2A" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li> -->
+                <li><a class="icon solid fa-envelope" href="javascript:void(0);" onclick="sendEmail()"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>Figen Demirel &copy; 2024</li>
+                <li>All Rights Reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+    function sendEmail() {
+      var recipient = "fgndmrl@gmail.com";
+      var mailtoLink = "mailto:" + recipient ;
+      window.location.href = mailtoLink;
+    }
+    </script>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.poptrox.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript">
+        (function() {
+
+            var params = {};
+            window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) {
+                params[key] = value;
+            });
+
+            /* Ohhh the humanity */
+
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            }, false);
+
+            /* mobile menu */
+
+            $('.mobile-menu').click(function(e) {
+                e.preventDefault();
+
+                $('.menu-group').slideToggle(200);
+            });
+
+        })();
+    </script>
+</body>
+
+</html>
